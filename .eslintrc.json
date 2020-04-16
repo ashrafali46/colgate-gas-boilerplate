@@ -1,0 +1,51 @@
+{
+    "root": true,
+    "env": {
+        "node": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
+        "plugin:vue/essential",
+        "@vue/typescript/recommended",
+        "@vue/prettier",
+        "@vue/prettier/@typescript-eslint"
+    ],
+    "parserOptions": {
+        "parser": "@typescript-eslint/parser",
+        "project": [
+            "./tsconfig.json",
+            "./script/tsconfig.json",
+            "./jsconfig.json"
+        ]
+    },
+    "rules": {
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/no-use-before-define": "off",
+        "@typescript-eslint/no-var-requires": "off",
+        "@typescript-eslint/triple-slash-reference": "off",
+        "@typescript-eslint/no-for-in-array": "warn",
+        "@typescript-eslint/no-throw-literal": "warn",
+        "no-return-await": "off",
+        "@typescript-eslint/return-await": "warn",
+        "@typescript-eslint/prefer-regexp-exec": "warn",
+        "@typescript-eslint/prefer-for-of": "warn",
+        "@typescript-eslint/no-implied-eval": "error",
+        "@typescript-eslint/explicit-function-return-type": "error",
+        "no-console": "off",
+        "no-debugger": "off",
+        "no-var": "off",
+        "@typescript-eslint/explicit-module-boundary-types": "off"
+    },
+    "overrides": [
+        {
+            // enable the rule specifically for TypeScript files
+            "files": ["*.ts", "*.tsx"],
+            "rules": {
+                "@typescript-eslint/explicit-module-boundary-types": ["error"]
+            }
+        }
+    ]
+}

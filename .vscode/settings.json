@@ -1,0 +1,40 @@
+{
+    "editor.minimap.enabled": false,
+    "files.associations": {
+        "**/*.html": "html"
+    },
+    "files.exclude": {
+        ".vscode/launch.json": true,
+        "dist/": true,
+        "node_modules/": true,
+        "public/": true,
+        ".browserslistrc": true,
+        ".clasp.json": true,
+        ".claspignore": true,
+        ".eslintrc.json": true,
+        ".gitignore": true,
+        ".prettierrc": true,
+        "appsscript.json": true,
+        "babel.config.js": true,
+        "jsconfig.json": true,
+        "LICENSE": true,
+        "package-lock.json": true,
+        "package.json": true,
+        "README.md": true,
+        "script/tsconfig.json": true,
+        "tsconfig.json": true,
+        "vue.config.js": true,
+        "webpack.config.gas.js": true,
+        "src/shims-tsx.d.ts": true,
+        "src/shims-vue.d.ts": true
+    },
+    "git.ignoreLimitWarning": true,
+    "html.format.enable": true,
+    "typescript.check.tscVersion": false,
+    "typescript.check.workspaceVersion": false,
+    "typescript.tsdk": "./node_modules/typescript/lib",
+    "vsicons.presets.angular": false,
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.list.openMode": "doubleClick"
+}
