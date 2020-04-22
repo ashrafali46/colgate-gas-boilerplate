@@ -1,3 +1,11 @@
 {
-    "spreadsheetId": "1Dh7jKlAGppi2_crOnT1YZweT8KKHvXPZNOYyXMK-G4A"
+    "spreadsheetId": "1Dh7jKlAGppi2_crOnT1YZweT8KKHvXPZNOYyXMK-G4A",
+    "oauthToken": "This token get from Google App Script (GAS) with function: ScriptApp.getOAuthToken(). So please run this function on GAS and replace here.",
+    "gapi": {
+        "apiKey": "<secret>",
+        "discoveryDocs": [
+            "https://sheets.googleapis.com/$discovery/rest?version=v4"
+        ],
+        "scope": "https://www.googleapis.com/auth/spreadsheets.readonly"
+    }
 }

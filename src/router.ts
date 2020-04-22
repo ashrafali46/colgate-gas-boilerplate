@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import VueRouter, { RouteConfig } from 'vue-router';
 import Home from '@/views/Home.vue';
+import Spreadsheet from '@/views/Spreadsheet.vue';
 import About from '@/views/About.vue';
 import Barcode from '@/views/Scanner/Barcode.vue';
 import QrCode from '@/views/Scanner/QrCode.vue';
@@ -23,6 +24,17 @@ const routes: RouteConfig[] = [
         },
         meta: {
             title: 'Trang chủ',
+        },
+    },
+    {
+        path: '/spreadsheet',
+        name: 'spreadsheet',
+        components: {
+            default: Spreadsheet,
+            appbar: AppBar,
+        },
+        meta: {
+            title: 'Bảng tính',
         },
     },
     {
@@ -63,6 +75,7 @@ const routes: RouteConfig[] = [
 
 const router = new VueRouter({
     routes,
+    mode: 'history',
 });
 
 export default router;

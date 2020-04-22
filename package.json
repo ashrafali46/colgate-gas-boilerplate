@@ -18,7 +18,7 @@
         "vue-qrcode-reader": "2.1.1",
         "vue-quaggajs": "1.0.10",
         "vue-router": "3.1.6",
-        "vuetify": "2.2.22",
+        "vuetify": "2.2.23",
         "vuex": "3.2.0"
     },
     "devDependencies": {
@@ -45,7 +45,7 @@
         "gas-webpack-plugin": "1.0.2",
         "html-webpack-inline-source-plugin": "0.0.10",
         "node-sass": "4.13.1",
-        "prettier": "2.0.4",
+        "prettier": "2.0.5",
         "sass-loader": "8.0.2",
         "typescript": "3.8.3",
         "vue-cli-plugin-vuetify": "2.0.5",

@@ -1,10 +1,16 @@
 {
-  "timeZone": "Asia/Bangkok",
-  "dependencies": {
-  },
-  "webapp": {
-    "access": "DOMAIN",
-    "executeAs": "USER_ACCESSING"
-  },
-  "exceptionLogging": "STACKDRIVER"
+    "timeZone": "Asia/Bangkok",
+    "dependencies": {},
+    "webapp": {
+        "access": "DOMAIN",
+        "executeAs": "USER_ACCESSING"
+    },
+    "exceptionLogging": "STACKDRIVER",
+    "oauthScopes": [
+        "https://www.googleapis.com/auth/drive.readonly",
+        "https://www.googleapis.com/auth/script.external_request",
+        "https://www.googleapis.com/auth/spreadsheets",
+        "https://www.googleapis.com/auth/userinfo.email",
+        "https://www.google.com/m8/feeds"
+    ]
 }

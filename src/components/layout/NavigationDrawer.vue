@@ -20,6 +20,11 @@
         </v-list>
         <v-list dense>
             <list-menu icon="mdi-home" title="Trang chủ" to="/" />
+            <list-menu
+                icon="mdi-google-spreadsheet"
+                title="Bảng tính"
+                to="/spreadsheet"
+            />
             <v-list-group prepend-icon="mdi-barcode-scan">
                 <template v-slot:activator>
                     <v-list-item-title>Quét mã</v-list-item-title>

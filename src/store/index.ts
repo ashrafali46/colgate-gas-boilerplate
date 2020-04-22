@@ -16,6 +16,7 @@ import {
 } from '@/mutation-types';
 import { Initialize } from './actions';
 import { INITIALIZE } from '@/action-types';
+import spreadsheet from './modules/spreadsheet';
 
 Vue.use(Vuex);
 
@@ -27,7 +28,7 @@ Vue.use(Vuex);
 export interface RootState {
     drawer: boolean;
     oauthToken?: string;
-    activeUserProfile?: UserProfile;
+    activeUserProfile?: GoogleAppScript.UserProfile;
 }
 
 export default new Vuex.Store<RootState>({
@@ -44,7 +45,8 @@ export default new Vuex.Store<RootState>({
         [INITIALIZE]: Initialize,
     },
     modules: {
-        about: about,
-        scanner: scanner,
+        about,
+        scanner,
+        spreadsheet,
     },
 });

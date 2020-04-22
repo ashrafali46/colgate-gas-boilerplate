@@ -4,7 +4,7 @@
  * @export
  * @returns {UserProfile}
  */
-export function getActiveUserProfile(): UserProfile {
+export function getActiveUserProfile(): GoogleAppScript.UserProfile {
     var email = Session.getEffectiveUser().getEmail();
 
     var contact = ContactsApp.getContact(email);

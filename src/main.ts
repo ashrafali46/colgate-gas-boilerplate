@@ -5,10 +5,8 @@ import router from './router';
 import store from './store';
 import vuetify from './plugins/vuetify'; // path to vuetify export
 import syncRouterWithGas from './router-gas-sync';
-import settings from './settings.json';
 import { VNode } from 'vue/types/umd';
 import { INITIALIZE } from './action-types';
-console.info(settings);
 
 Vue.config.productionTip = false;
 

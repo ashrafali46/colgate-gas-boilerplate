@@ -37,11 +37,11 @@ export function setOAuthToken(state: RootState, oauthToken: string): void {
  *
  * @export
  * @param {RootState} state
- * @param {UserProfile} userProfile
+ * @param {GoogleAppScript.UserProfile} userProfile
  */
 export function setActiveUserProfile(
     state: RootState,
-    userProfile: UserProfile
+    userProfile: GoogleAppScript.UserProfile
 ): void {
     state.activeUserProfile = userProfile;
 }
